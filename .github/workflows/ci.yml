@@ -1,5 +1,6 @@
-name: "Sample React CI Pipeline / workflow"
+name: "Sample React CI Pipeline / workflow" # name of pipeline
 
+# event
 on:
     push:
         branches:
@@ -7,14 +8,17 @@ on:
             - master
 
 jobs:
-    build-and-test:
-        runs-on: ubuntu-latest
+    build-and-test: # Job name
+        runs-on: ubuntu-latest # envermante
 
         steps: # Step no. 1
-            - name: "Setup Node Js"
-              uses: actions/setup-node@v4
+            - name: "Setup Node Js" # Name of step
+              uses: actions/setup-node@v4 # Predefine action
               with:
                 node-version: '22'
  
             - name: "Check node version"
               run: node --version
+
+            - name: "Clone the repository"
+              uses: actions/checkout@v2
