@@ -48,5 +48,5 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: build-output
-                path: .next/
+                path: ./subfolder/.next/
                 # if-no-files-found: error
