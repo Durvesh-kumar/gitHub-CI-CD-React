@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// const nextConfig: NextConfig = {
+//   /* config options here */
+// };
+
+// export default nextConfig;
+
+module.exports = {
+  distDir: 'custom_dist', // Custom output directory
 };
-
-export default nextConfig;
