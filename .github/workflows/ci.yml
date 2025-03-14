@@ -10,7 +10,7 @@ jobs:
     build-and-test:
         runs-on: ubuntu-latest
 
-        steps:
+        steps: # Step no. 1
             - name: "Setup Node Js"
               uses: actions/setup-node@v4
               with:
